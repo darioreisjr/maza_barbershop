@@ -5,6 +5,26 @@
   outline: 0;
 }
 
+ /* Barra de rolagem fina com cores escuras */
+ ::-webkit-scrollbar {
+  width: 10px;
+  background-color: #333;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #06121e;
+}
+
+/* Barra de rolagem colorida com indicador transparente */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #06121e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #F27020;
+  background-clip: padding-box;
+  border-radius: 10px;
+}
+
 header {
   width: 100%;
 }
@@ -159,6 +179,8 @@ i {
   }
 }
 @media screen and (max-width: 480px) {
+
+
   .hero h1 {
     font-size: 24px;
   }
